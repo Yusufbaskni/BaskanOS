@@ -19,6 +19,10 @@
 
 # production
 /build
+/dist
+/desktop/.cache
+/desktop/AppIcon.iconset
+/desktop/AppIcon-1024.png
 
 # misc
 .DS_Store
@@ -30,8 +34,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files — never commit secrets
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
